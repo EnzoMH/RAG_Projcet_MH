@@ -1,0 +1,33 @@
+Directory Structure
+
+RAG_GIW_0704/
+├── app/ # 어플리케이션의 주요 코드가 위치
+│   ├── __init__.py
+│   ├── main.py
+│   ├── config.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── file_handlers.py
+│   │   └── text_processors.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── llm.py
+│   │   └── vectorstore.py
+│   └── components/
+│       ├── __init__.py
+│       ├── pdf_uploader.py
+│       └── chat_interface.py
+
+0. app/: 애플리케이션의 주요 코드가 위치합니다.
+
+1. main.py: Streamlit 애플리케이션의 주 진입점입니다.
+2. config.py: 설정 관련 코드 (API 키 등)를 관리합니다.
+3. utils/: 파일 처리, 텍스트 처리 등의 유틸리티 함수를 포함합니다.
+4. models/: LLM, 벡터 저장소 등 모델 관련 코드를 관리합니다.
+5. components/: PDF 업로더, 채팅 인터페이스 등 UI 컴포넌트를 관리합니다.
+
+static/: CSS 파일 등 정적 파일을 저장합니다.
+templates/: HTML 템플릿 파일을 저장합니다 (필요한 경우).
+tests/: 단위 테스트 코드를 포함합니다.
+requirements.txt: 프로젝트의 의존성을 관리합니다.
+README.md: 프로젝트 설명 및 사용 방법을 문서화합니다.
